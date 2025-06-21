@@ -1,0 +1,266 @@
+@import url('https://fonts.cdnfonts.com/css/shadow-of-xizor');
+
+body{
+    background-image: url(https://i.imgur.com/WNLxdiE.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.navbar{
+    background-color: #009ffb;
+    
+}
+
+.navbar-text,
+.navbar-brand,
+.nav-link{
+    font-family: 'Shadow of Xizor', sans-serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    color: #fbeb00;
+}
+
+.dropdown{
+    margin-top: 12px;
+}
+
+.nav-link:active{
+    color: #fbeb00;    
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: 1000px;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 60px;
+}
+
+.ctrl{
+    cursor: pointer;
+    background-color: #fbeb00;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 15px;
+}
+
+.ctrl:active{
+    transform: scale(0.9);
+}
+
+.line{
+    width: 100%;
+    height: 5px;
+    margin-top: 5px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 10px;
+    position: relative;
+    top: 220px;
+    left: 45px;
+    cursor: pointer;
+}
+
+.LineChild{
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #fbeb00;
+    width: 0%;
+    height: 100%;
+    transition: width 0.1s;
+}
+
+.LineChild::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    cursor: pointer;
+    top: -3px;
+    right: 0;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+}
+
+.pos-btn{
+    align-items: center;
+    position: relative;
+    top: -50px;
+    left: 90px;
+}
+
+.pos-btn-item{
+    position: relative;
+    left: 20px;
+}
+
+.prog{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.time{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container figure{
+    position: absolute;
+}
+
+.overlay{
+    z-index: 3;
+}
+
+.tittle{
+    color: azure;
+    position: relative;
+    top: 370px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.centro{
+    display: flex;
+    position: relative;
+    top: 380px;
+    left: 105px;
+}
+
+.none{
+    display: none;
+}
+
+.container figure#img1{
+    top: 155px;
+    left: 170px;
+    z-index: 2;
+    animation: girar 5s linear infinite;
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.container figure#img2{
+    top: 90px;
+    z-index: 1;
+    left: -50px;
+    animation: girar 5s linear infinite;
+    filter: drop-shadow(15px 15px 15px black);
+}
+
+#name{
+    color: azure;
+    position: relative;
+    top: -340px;
+    text-align: center;
+}
+
+.pos-timer{
+    position: relative;
+    color: azure;
+    top: 220px;
+    left: 45px;
+}
+
+#botao1{
+    padding: 20px;
+}
+
+#titulo-nav{
+    font-size: 70px;
+}
+
+#symbol{
+    width: 150px;
+    height: 120px;
+}
+
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }   
+
+footer{
+    height: 200px;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+}
+
+.pagina {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+}
+
+.fundo-recortado {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.fundo-recortado::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml;utf8,<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><defs><linearGradient id="gradYellow" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%23fff9c4; stop-opacity:1" /><stop offset="100%" style="stop-color:%23ffeb3b; stop-opacity:1" /></linearGradient></defs><path d=\'M0,50 Q30,80 60,50 Q90,20 120,50 Q150,80 180,50 Q210,20 240,50 Q270,80 300,50 Q330,20 360,50 Q390,80 420,50 Q450,20 480,50 Q510,80 540,50 Q570,20 600,50 Q630,80 660,50 Q690,20 720,50 Q750,80 780,50 L800,50 L800,550 Q770,520 740,550 Q710,580 680,550 Q650,520 620,550 Q590,580 560,550 Q530,520 500,550 Q470,580 440,550 Q410,520 380,550 Q350,580 320,550 Q290,520 260,550 Q230,580 200,550 Q170,520 140,550 Q110,580 80,550 Q50,520 0,550 Z\' fill=\'url(%23gradYellow)\' /></svg>') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.conteudo {
+    position: relative;
+    top: 450px;
+    display: flex;
+}
+
+#titulo-personagem{
+    font-family: 'Shadow of Xizor', sans-serif;
+    margin-left: 97px;
+    font-size: 200px;
+    color: #fbeb00;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+}
+
+#biografia{
+    font-size: 25px;
+    padding-left: 100px;
+    text-align: left;
+}
+
+#texto-cortado{
+    position: relative;
+    left: 60px;
+    bottom: 270px;
+}
+
+#Mark-bio{
+    position: relative;
+    bottom: 250px;
+    margin-left: 220px;
+    float: right;
+    filter: drop-shadow(15px 15px 15px black);
+}
