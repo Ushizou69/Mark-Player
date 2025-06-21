@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-5.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="icon" href="../img/icon.png" type="image/png">
+</head>
+<body flex-container>
+
+  <div class="pagina">
+  <header>
+    <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand nav-link" href="../index.html" id="titulo-nav">Invincible<img src="../img/redsymbol.png" id="symbol" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Páginas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="página2.html">Página 2 (Omni-Man)</a></li>
+            <li><a class="dropdown-item" href="página3.html">Página 3 (Rex)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+</header>
+
+<main>
+
+<div class="container">
+  <h4 id="name"></h4>
+
+  <div>
+  <figure id="img1">
+    <img id="Nolan" src="../img/Nolan.webp" alt="">
+  </figure>
+  <figure id="img2">
+    <img src="../img/disco.webp" alt="">
+  </figure>
+</div>
+
+<div class="overlay">
+  <div id="art-nome">
+  <p class="tittle"></p>
+  </div>
+
+  
+  <div class="prog">
+    <div class="time">
+      <div class="start pos-timer">
+      <h4 id="start"><strong>0:00</strong></h4>
+      </div>
+      <div class="end pos-timer">
+        <h4 id="end"><strong>0:00</strong></h4>
+      </div>
+</div>
+
+  <div class="line">
+    <div class="LineChild"></div>
+  </div>
+
+  </div>
+  <div class="msc center centro">
+    <div class="ctrl center pos-btn" onclick="backward()">
+      <i class="fa-solid fa-backward-step pos-btn-item"></i>
+    </div>
+    <div class="ctrl center pos-btn" id="playsong">
+      <i class="fa-solid fa-play pos-btn-item"></i>
+      <i class="fa-solid fa-pause none pos-btn-item"></i>
+    </div>
+    <div class="ctrl center pos-btn" onclick="forward()">
+      <i class="fa-solid fa-forward-step pos-btn-item"></i>
+    </div>
+    <audio src="" class="song"></audio>
+  </div>
+
+</div>
+</div>
+
+<section class="fundo-recortado">
+        <div class="conteudo">
+          <div id="texto-cortado">
+            <h1 id="titulo-personagem">Nolan Grayson</h1>
+            <p id="biografia">Nolan Grayson ou mais conhecido como Omni-Man é o pai de Mark Grayson ou Invencível. Nolan veio de um planeta distante chamado <strong>Viltrum</strong>, uma terra de guerreiros <strong>sanguinários</strong>, sedentos pela batalha e pela conquista; ele vem para a Terra com o objetivo de conquistá-la, porém, acaba por passar tempo demais com os humanos, assim ficando com o "coração mole", e tendo um filho com uma humana (<strong>Deborah Grayson</strong>).</p>
+          </div>
+            <img id="Nolan-bio" src="../img/Nolan-Grayson.webp" alt="">
+        </section>
+</main>
+
+  <footer class="bg-dark py-5 mt-5">
+      <p class="display-5 mb-3"> Nicolas Paulo Portulan de Araujo</p>
+      <small class="text-white-50">&copy; Copyright by me. All rights reserved.</small>
+  </footer>
+</div>
+
+<audio src="" id="EE"></audio>
+
+
+
+    <script src="../js/script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
+</body>
+</html>
